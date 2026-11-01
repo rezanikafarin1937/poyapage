@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "vazirmatn/Vazirmatn-font-face.css";
 import "./globals.scss";
 import Header from '../components/Header/Header';
 

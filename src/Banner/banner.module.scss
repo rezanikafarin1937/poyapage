@@ -14,17 +14,16 @@
         font-size: 14px;
     }    
     &__fontsize18{
-        font-size: 18px;
-        text-align: right;
+        font-size: 24px;
+        font-weight: 600;
     }
     &__fontsize16{
         font-size: 1rem;
         text-align: right;
-        padding-right: 3rem;
+        padding-right: 6rem;
     }
     &__fontsize48{
         font-size: 3rem;
-        text-align: right;
         padding-right: 3rem;
     }
 }

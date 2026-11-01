@@ -12,7 +12,8 @@
     "next": "16.4.3",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "sass": "^1.107.1"
+    "sass": "^1.107.1",
+    "vazirmatn": "^33.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
