@@ -1,0 +1,19 @@
+.navbar {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__item {
+    margin: 0 0.5rem;
+    color: var(--color-surface);
+  }
+
+  &__active{
+    color : var(--color-accent-light);
+  }
+}
