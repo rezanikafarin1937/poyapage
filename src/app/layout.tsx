@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar/Navbar";
 import "./globals.scss";
+import Header from '../components/Header/Header';
 
 export const metadata: Metadata = {
   title: "پویا پیج",
@@ -15,10 +15,8 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body>
-        <div className="wrapper">
-          <Navbar />
+          <Header />
           {children}
-        </div>
       </body>
     </html>
   );

@@ -1,0 +1,51 @@
+@use "../styles/variables";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+/* .wrapper {
+  margin: 0 2rem;
+
+  @media (max-width: 425px) {
+    margin: 0 1rem;
+  }
+} */
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding-inline: 1rem;
+  }
+}
