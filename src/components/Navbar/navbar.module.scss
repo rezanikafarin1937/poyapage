@@ -12,6 +12,11 @@
     color: var(--color-surface);
     border-bottom: 1px solid transparent;
     padding-bottom: .5rem;
+    transition: all .2s;
+
+    &:hover{
+      color : var(--color-accent-light);
+    }
   }
 
   &__active{

@@ -1,0 +1,40 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.parent__logo {
+  line-height: 1;
+}
+
+.parent__nologo {
+  line-height: 1.5;
+}
+
+.parent__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.parent__text h2,
+.parent__text h3 {
+  white-space: nowrap;
+}
+
+.parent__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.parent__description {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.parent__space {
+  margin-right: 0.5rem;
+}
