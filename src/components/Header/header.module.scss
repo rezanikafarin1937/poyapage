@@ -8,4 +8,12 @@
   position: sticky;
   left: 0;
   top: 0;
+
+  @media (max-width: 425px) {
+    padding: .7rem;
+  }
+
+  @media (min-width : 426px) and (max-width : 768px) {
+    padding: .5rem 1rem;
+  }
 }

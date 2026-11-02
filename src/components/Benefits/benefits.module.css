@@ -4,3 +4,11 @@
   align-items: center;
   padding: 2rem;
 }
+
+@media (max-width: 768px) {
+  .parent {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}

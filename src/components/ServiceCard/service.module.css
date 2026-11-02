@@ -3,14 +3,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
+  width: 25%;
+}
+
+@media (max-width: 425px) {
+  .parent {
+    width: 50%;
+  }
 }
 
 .parent__logo {
   line-height: 1;
+  justify-content: flex-end;
 }
 
 .parent__nologo {
   line-height: 1.5;
+  flex-direction: column;
 }
 
 .parent__text {
@@ -30,11 +39,32 @@
   font-weight: 500;
 }
 
+@media (max-width: 425px) {
+  .parent__title {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+
 .parent__description {
   font-size: 0.75rem;
   font-weight: 200;
 }
 
+@media (max-width: 425px) {
+  .parent__description {
+    font-size: 0.65rem;
+    font-weight: 400;
+  }
+}
+
 .parent__space {
   margin-right: 0.5rem;
+}
+
+@media (max-width: 425px) {
+  .parent__space {
+    width: 35px;
+    height: 35px;
+  }
 }
