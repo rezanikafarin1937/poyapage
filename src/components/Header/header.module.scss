@@ -16,4 +16,14 @@
   @media (min-width : 426px) and (max-width : 768px) {
     padding: .5rem 1rem;
   }
+
+  &__parentIcon{
+    width: 25px;
+    height: 25px;
+    margin-left: .25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 }

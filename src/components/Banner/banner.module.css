@@ -64,6 +64,7 @@
   font-size: 1rem;
   text-align: right;
   padding-right: 6rem;
+  color: var(--color-accent-light);
 }
 
 @media (max-width: 768px) and (min-width: 426px) {

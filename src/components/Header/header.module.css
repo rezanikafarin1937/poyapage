@@ -21,3 +21,12 @@
     padding: .5rem 1rem;
   }
 }
+
+.header__parentIcon {
+  width: 25px;
+  height: 25px;
+  margin-left: .25rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
