@@ -1,16 +1,19 @@
 .btn {
   border-radius: 1.5rem;
-  padding: 0.25rem 1.5rem;
-  font-size: 16px;
-  font-weight: 400;
+  padding: 0.25rem 1rem;
+  font-size: 12px;
+  font-weight: 300;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0;
+  white-space: nowrap;
+  transition: all 0.2s;
 
   @media (max-width: 425px) {
-    font-size: 14px;
-    font-weight: 400;
+    padding: 0.12rem 0.75rem;
+    font-size: 10px;
   }
 }
 
@@ -32,4 +35,13 @@
 .simple {
   background-color: var(--color-border);
   color: var(--color-text);
+
+  &:hover {
+    background-color: var(--color-accent-dark);
+    color: var(--color-surface);
+  }
+
+  @media (max-width : 425px ) {
+    margin-top: 1rem;
+  }
 }
