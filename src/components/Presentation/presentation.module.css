@@ -1,8 +1,8 @@
 .parent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 @media (max-width: 425px) {
@@ -43,7 +43,7 @@
 
 .parent__btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
 }
@@ -51,6 +51,7 @@
 @media (max-width: 768px) {
   .parent__btns {
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 70%;
   }
 }
@@ -58,6 +59,17 @@
 @media (max-width: 425px) {
   .parent__btns {
     width: 100%;
+    justify-content: flex-start;
     flex-wrap: wrap;
+  }
+}
+
+.parent__marginX {
+  margin: 0 .5rem;
+}
+
+@media (max-width: 768px) {
+  .parent__marginX {
+    margin: 0 .25rem;
   }
 }

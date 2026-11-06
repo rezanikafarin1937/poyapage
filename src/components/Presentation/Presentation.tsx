@@ -25,9 +25,9 @@ const Presentation = () => {
 
       <section className={styles.parent__btns}>
         {items.map((items, index) => (
-          <Button variant="simple" key={index}>
-            {items.title}
-          </Button>
+          <div  className={styles.parent__marginX} key={index}>
+            <Button variant="simple">{items.title}</Button>
+          </div>
         ))}
       </section>
     </div>

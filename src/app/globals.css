@@ -54,3 +54,7 @@ li {
 .margin-y {
   margin: 1rem 0;
 }
+
+.margin-x {
+  margin: 0 .5rem;
+}
