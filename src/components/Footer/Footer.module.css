@@ -20,6 +20,29 @@
   pointer-events: none;
 }
 
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactItem a {
+  color: var(--color-white);
+  text-decoration: none;
+  direction: ltr;
+  transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+  color: var(--color-gold);
+}
+
+.contactItem .contactIcon {
+  color: var(--color-accent);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -29,7 +52,7 @@
 /* CTA */
 .cta {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 25px;
   min-height: 145px;
@@ -38,6 +61,11 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 24px;
   background: linear-gradient(120deg, #172431, #111c28 65%, #101820);
+}
+
+.cta a {
+  text-decoration: none;
+  color: var(--color-surface);
 }
 
 .cta__icon {
@@ -59,7 +87,7 @@
   line-height: 1.8;
 }
 
-.cta__content h2 span {
+.cta__content span {
   color: #c99a5a;
 }
 
@@ -160,6 +188,7 @@
   color: #f8f8f7;
   background: #1a2734;
   transition: 0.25s;
+  text-decoration: none;
 }
 
 .socials a:hover {
@@ -257,7 +286,7 @@
   border: 0;
   border-radius: 25px;
   background: #c99a5a;
-  color: #101820;
+  color: var(--color-surface);
   font-family: inherit;
   font-size: 12px;
   font-weight: 700;

@@ -20,6 +20,33 @@
   }
 }
 
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+    direction: ltr;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--color-gold);
+    }
+  }
+
+  .contactIcon {
+    color: var(--color-accent);
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+}
+
+
+
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -30,7 +57,7 @@
 
 .cta {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 25px;
   min-height: 145px;
@@ -38,12 +65,12 @@
   margin-bottom: 75px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 24px;
-  background: linear-gradient(
-    120deg,
-    #172431,
-    #111c28 65%,
-    #101820
-  );
+  background: linear-gradient(120deg, #172431, #111c28 65%, #101820);
+
+  a{
+    text-decoration: none;
+    color : var(--color-surface);
+  }
 
   &__icon {
     display: flex;
@@ -61,10 +88,10 @@
       font-size: clamp(18px, 2vw, 27px);
       font-weight: 700;
       line-height: 1.8;
+    }
 
-      span {
-        color: #c99a5a;
-      }
+    span {
+      color: #c99a5a;
     }
 
     p {
@@ -87,6 +114,7 @@
     font-size: 14px;
     font-weight: 700;
     transition: 0.25s;
+
 
     &:hover {
       background: #d8b078;
@@ -168,6 +196,7 @@
     color: #f8f8f7;
     background: #1a2734;
     transition: 0.25s;
+    text-decoration: none;
 
     &:hover {
       color: #101820;
@@ -235,6 +264,8 @@
     line-height: 2;
   }
 
+
+
   &__form {
     display: flex;
     align-items: center;
@@ -244,6 +275,7 @@
     border: 1px solid rgba(255, 255, 255, 0.17);
     border-radius: 35px;
     background: #141f2b;
+
 
     svg {
       flex-shrink: 0;
@@ -271,7 +303,7 @@
       border: 0;
       border-radius: 25px;
       background: #c99a5a;
-      color: #101820;
+      color: var(--color-surface);
       font-family: inherit;
       font-size: 12px;
       font-weight: 700;
@@ -425,8 +457,10 @@
   }
 
   .newsletter {
+    
     &__form {
       min-height: 52px;
+
     }
   }
 

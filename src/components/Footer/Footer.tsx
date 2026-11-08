@@ -13,6 +13,7 @@ import {
   FaGithub,
   FaYoutube,
   FaTelegramPlane,
+  FaPhone,
 } from "react-icons/fa";
 
 import styles from "./Footer.module.scss";
@@ -48,7 +49,7 @@ const Footer = () => {
         {/* Call To Action */}
         <section className={styles.cta}>
           <div className={styles.cta__icon}>
-            <Send size={58} strokeWidth={1.5} />
+            <Send size={30} strokeWidth={1.5} />
           </div>
 
           <div className={styles.cta__content}>
@@ -56,6 +57,14 @@ const Footer = () => {
               آماده‌اید پروژه <span>بعدی</span> خود را شروع کنیم؟
             </h2>
             <p>با ما در ارتباط باشید تا از مشاوره رایگان بهره‌مند شوید.</p>
+            <br />
+            <h3>
+              آماده <span>همکاری</span> هستم
+            </h3>
+            <p>
+              از همکاری با تیم‌های خلاق، شرکت‌های فناوری و همکاران متخصص استقبال
+              می‌کنم.
+            </p>
           </div>
 
           <Link href="/contact" className={styles.cta__button}>
@@ -76,6 +85,21 @@ const Footer = () => {
               با تجربه در طراحی و توسعه وب‌سایت‌های مدرن، به کسب‌وکارها کمک
               می‌کنیم تا حضور آنلاین قدرتمندی داشته باشند.
             </p>
+
+            <div className={styles.contactItem}>
+              <FaPhone className={styles.contactIcon} />
+              <a href="tel:09186936959" dir="ltr">
+                ۰۹۱۸ ۶۹۳ ۶۹۵۹
+              </a>
+            </div>
+
+            <div className={styles.contactItem}>
+              <FaPhone className={styles.contactIcon} />
+              <a href="tel:09183485509" dir="ltr">
+                ۰۹۱۸ ۳۴۸ ۵۵۰۹
+              </a>
+            </div>
+            <br />
 
             <div className={styles.socials}>
               {socialLinks.map(({ title, href, icon: Icon }) => (
