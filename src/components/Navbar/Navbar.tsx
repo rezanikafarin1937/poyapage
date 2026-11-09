@@ -16,11 +16,11 @@ const navs = [
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div className={styles.navbar}>
+    <nav className={styles.navbar}>
       {navs.map((nav,index) => (
         <Link className={`${styles.navbar__item} ${pathname === nav.link ? styles.navbar__active : ""}`} href={nav.link} key={index}>{nav.title}</Link>
       ))}
-    </div>
+    </nav>
   )
 }
 

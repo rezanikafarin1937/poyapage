@@ -1,26 +1,26 @@
 import styles from "./card.module.scss";
 
 type TProps = {
-  image : string;
-  title : string;
-  description : string;
+  image: string;
+  title: string;
+  description: string;
+  imageAlt: string;
+};
 
-}
-
-const Card = ({image,title,description} : TProps) => {
+const Card = ({ image, title, description, imageAlt }: TProps) => {
   return (
-    <div className={styles.card}>
+    <article className={styles.card}>
       <div className={styles.card__image}>
-        <img src={image} alt=" نمونه کار طراحی سایت شرکتی فروشگاهی پنل مدیریتی" />
+        <img src={image} alt={imageAlt} loading="lazy" decoding="async" />
       </div>
       <div className={styles.card__title}>
-        {title}
+        <h3>{title}</h3>
       </div>
       <div className={styles.card__description}>
-        {description}
+        <p>{description}</p>
       </div>
-    </div>
-  )
-}
+    </article>
+  );
+};
 
-export default Card
+export default Card;

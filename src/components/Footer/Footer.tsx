@@ -87,14 +87,14 @@ const Footer = () => {
             </p>
 
             <div className={styles.contactItem}>
-              <FaPhone className={styles.contactIcon} />
+              <FaPhone className={styles.contactIcon} aria-hidden="true" />
               <a href="tel:09186936959" dir="ltr">
                 ۰۹۱۸ ۶۹۳ ۶۹۵۹
               </a>
             </div>
 
             <div className={styles.contactItem}>
-              <FaPhone className={styles.contactIcon} />
+              <FaPhone className={styles.contactIcon} aria-hidden="true" />
               <a href="tel:09183485509" dir="ltr">
                 ۰۹۱۸ ۳۴۸ ۵۵۰۹
               </a>
