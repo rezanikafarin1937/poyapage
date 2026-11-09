@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -15,7 +14,7 @@ const projects = [
     description:
       "طراحی فروشگاه اینترنتی تخصصی عینک با دسته‌بندی محصولات، فیلترهای کاربردی و تجربه خرید ساده و جذاب.",
     image: "/images/portfolio/tizbin.png",
-    technologies: ["React","javaScript", "SCSS"],
+    technologies: ["React", "javaScript", "SCSS"],
   },
   {
     id: 2,
@@ -25,7 +24,7 @@ const projects = [
     description:
       "طراحی فروشگاه اینترنتی پوشاک و کفش با تمرکز بر نمایش محصولات، دسته‌بندی مناسب و تجربه کاربری روان.",
     image: "/images/portfolio/poshana.png",
-    technologies: ["Next.js","javaScript", "TailwindCss", "SCSS"],
+    technologies: ["Next.js", "javaScript", "TailwindCss", "SCSS"],
   },
   {
     id: 3,
@@ -61,9 +60,9 @@ export default function PortfolioPage() {
           </h1>
 
           <p>
-            هر پروژه، تجربه‌ای تازه و فرصتی برای خلق یک راهکار دیجیتال
-            ارزشمند است. در این بخش با نمونه‌هایی از ایده‌ها و
-            پروژه‌های طراحی و توسعه وب آشنا شوید.
+            هر پروژه، تجربه‌ای تازه و فرصتی برای خلق یک راهکار دیجیتال ارزشمند
+            است. در این بخش با نمونه‌هایی از ایده‌ها و پروژه‌های طراحی و توسعه
+            وب آشنا شوید.
           </p>
 
           <div className={styles.heroStats}>
@@ -97,8 +96,8 @@ export default function PortfolioPage() {
               <span className={styles.sectionLabel}>SELECTED PROJECTS</span>
               <h2>نگاهی به پروژه‌های ما</h2>
               <p>
-                نمونه‌هایی از طراحی فروشگاه‌های اینترنتی و راهکارهای
-                اختصاصی تحت وب.
+                نمونه‌هایی از طراحی فروشگاه‌های اینترنتی و راهکارهای اختصاصی تحت
+                وب.
               </p>
             </div>
 
@@ -113,9 +112,7 @@ export default function PortfolioPage() {
               <button
                 key={filter}
                 type="button"
-                className={
-                  activeFilter === filter ? styles.activeFilter : ""
-                }
+                className={activeFilter === filter ? styles.activeFilter : ""}
                 onClick={() => setActiveFilter(filter)}
                 aria-pressed={activeFilter === filter}
               >
@@ -129,17 +126,9 @@ export default function PortfolioPage() {
             {filteredProjects.map((project) => (
               <article className={styles.projectCard} key={project.id}>
                 <div className={styles.projectImage}>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    // fill
-                    // sizes="(max-width: 600px) 100vw, (max-width: 992px) 50vw, 33vw"
-                    // className={styles.image}
-                  />
+                  <img src={project.image} alt={project.title} />
 
-                  <span className={styles.projectType}>
-                    {project.type}
-                  </span>
+                  <span className={styles.projectType}>{project.type}</span>
                 </div>
 
                 <div className={styles.projectContent}>
@@ -186,8 +175,8 @@ export default function PortfolioPage() {
             <span className={styles.sectionLabel}>LET'S WORK TOGETHER</span>
             <h2>پروژه بعدی می‌تواند متعلق به شما باشد!</h2>
             <p>
-              اگر برای کسب‌وکار خود به یک وب‌سایت حرفه‌ای نیاز دارید،
-              خوشحال می‌شویم درباره ایده شما گفت‌وگو کنیم.
+              اگر برای کسب‌وکار خود به یک وب‌سایت حرفه‌ای نیاز دارید، خوشحال
+              می‌شویم درباره ایده شما گفت‌وگو کنیم.
             </p>
           </div>
 

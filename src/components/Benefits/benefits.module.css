@@ -1,9 +1,6 @@
 .parent {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 2rem;
-  background-color: var(--color-background);
+  background-color: var(--color-border);
 }
 
 @media (max-width: 768px) {
@@ -11,5 +8,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
+  }
+}
+
+.parent ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.parent__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0;
+  color: var(--color-text);
+}
+
+@media (max-width: 425px) {
+  .parent__title {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 }
