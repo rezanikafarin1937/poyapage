@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 
 import styles from "./page.module.scss";
@@ -40,6 +39,7 @@ export default function Home() {
       <Benefits />
       <Presentation />
       <Portfolio />
+      <br />
     </main>
   );
 }

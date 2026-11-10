@@ -10,6 +10,14 @@
   --muted: #777777;
   --border: #e8e6e1;
 
+
+  &__phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .hero {
     background-color: var(--navy);
     color: var(--white);
