@@ -80,12 +80,6 @@ const Footer = () => {
             <Link href="/" className={styles.brand__logo}>
               <Logo />
             </Link>
-
-            <p>
-              با تجربه در طراحی و توسعه وب‌سایت‌های مدرن، به کسب‌وکارها کمک
-              می‌کنیم تا حضور آنلاین قدرتمندی داشته باشند.
-            </p>
-
             <div className={styles.contactItem}>
               <FaPhone className={styles.contactIcon} aria-hidden="true" />
               <a href="tel:09186936959" dir="ltr">
@@ -99,6 +93,7 @@ const Footer = () => {
                 ۰۹۱۸ ۳۴۸ ۵۵۰۹
               </a>
             </div>
+
             <br />
 
             <div className={styles.socials}>
@@ -115,6 +110,11 @@ const Footer = () => {
                 </a>
               ))}
             </div>
+            <br />
+              <p className={styles.brand__nowrap}>
+                با تجربه در طراحی و توسعه وب‌سایت‌های مدرن، به کسب‌وکارها کمک
+                می‌کنیم تا حضور آنلاین قدرتمندی داشته باشند.
+              </p>
           </div>
 
           {/* Quick Links */}

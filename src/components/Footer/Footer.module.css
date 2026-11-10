@@ -20,6 +20,10 @@
   pointer-events: none;
 }
 
+.warp {
+  white-space: wrap !important;
+}
+
 .contactItem {
   display: flex;
   align-items: center;
@@ -169,7 +173,11 @@
   color: #c4c8ce;
   font-size: 14px;
   line-height: 2.2;
-  margin-bottom: 25px;
+  white-space: nowrap;
+}
+
+.brand__nowrap {
+  white-space: wrap !important;
 }
 
 .socials {

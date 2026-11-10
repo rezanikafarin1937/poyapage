@@ -20,6 +20,10 @@
   }
 }
 
+.warp{
+  white-space: wrap !important;
+}
+
 
 .contactItem {
   display: flex;
@@ -177,7 +181,12 @@
     color: #c4c8ce;
     font-size: 14px;
     line-height: 2.2;
-    margin-bottom: 25px;
+    white-space: nowrap;
+    // max-width: 250px;
+  }
+
+  &__nowrap { 
+    white-space: wrap !important;
   }
 }
 
