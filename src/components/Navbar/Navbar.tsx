@@ -9,6 +9,7 @@ const navs = [
     {title : "صفحه اصلی",link : "/"},
     {title : "نمونه کارها",link : "/portfolio"},
     {title : "خدمات",link : "/services"},
+    {title : "مقالات",link : "/articles"},
     {title : "درباره من",link : "/about"},
     {title : "تماس با من",link : "/contact"}
 ]

@@ -23,7 +23,7 @@ import Logo from "../Logo/Logo";
 const quickLinks = [
   { title: "صفحه اصلی", href: "/" },
   { title: "نمونه کارها", href: "/portfolio" },
-  { title: "خدمات", href: "/services" },
+  { title: "مقالات آموزشی", href: "/articles", highlight: true },
   { title: "درباره ما", href: "/about" },
   { title: "تماس با ما", href: "/contact" },
 ];
@@ -111,23 +111,27 @@ const Footer = () => {
               ))}
             </div>
             <br />
-              <p className={styles.brand__nowrap}>
-                با تجربه در طراحی و توسعه وب‌سایت‌های مدرن، به کسب‌وکارها کمک
-                می‌کنیم تا حضور آنلاین قدرتمندی داشته باشند.
-              </p>
+            <p className={styles.brand__nowrap}>
+              با تجربه در طراحی و توسعه وب‌سایت‌های مدرن، به کسب‌وکارها کمک
+              می‌کنیم تا حضور آنلاین قدرتمندی داشته باشند.
+            </p>
           </div>
 
           {/* Quick Links */}
           <div className={styles.column}>
             <h3>لینک‌های سریع</h3>
-
             <ul>
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href}>{link.title}</Link>
+                  <Link
+                    href={link.href}
+                    className={link.highlight ? styles.column__highlight : ""}
+                  >
+                    {link.title}
+                  </Link>
                 </li>
               ))}
-            </ul>
+            </ul>{" "}
           </div>
 
           {/* Services */}

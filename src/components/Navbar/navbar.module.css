@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -15,7 +17,7 @@
 }
 
 .navbar__item {
-  margin: 0 0.5rem;
+  margin: 0 0.7rem;
   color: var(--color-surface);
   border-bottom: 1px solid transparent;
   padding-bottom: .5rem;

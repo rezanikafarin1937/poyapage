@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer {
   position: relative;
   width: 100%;
@@ -22,6 +23,23 @@
 
 .warp {
   white-space: wrap !important;
+}
+
+.column__highlight {
+  color: #c99a5a !important;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.column__highlight::before {
+  content: "✦";
+  margin-left: 7px;
+  color: #c99a5a;
+}
+
+.column__highlight:hover {
+  color: #d8b078 !important;
+  padding-right: 5px;
 }
 
 .contactItem {
